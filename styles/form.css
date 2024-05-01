@@ -108,3 +108,10 @@
         opacity: 0;
     }
 }
+
+@media screen and (max-width: 700px) {
+    #feedback .form #close{
+        left: 90%;
+        top: 10px;
+    }
+}
