@@ -120,7 +120,6 @@ header .phone p:hover{
 
 footer {
     position: relative;
-    top: 380px;
     background-color: rgb(33, 33, 110);
     height: 250px;
     width: 100%;
@@ -165,6 +164,213 @@ footer {
     height: 70px;
 }
 
+.path {
+    position: relative;
+    left: 150px;
+    width: 50%;
+    top: 380px;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.path a{
+    color: white;
+}
+
+.leftblock{
+    position: relative;
+    top: 380px;
+    width: 150px;
+    left: 100px;
+}
+
+.leftblock a{
+    text-decoration: none;
+}
+
+.leftblock li{
+    color: white;
+}
+
+.leftblock ul a{
+    color: white;
+}
+
+.leftblock h3,h2{
+    color: white;
+}
+
+.leftblock h2{
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.leftblock h2:hover{
+    color: rgb(223, 143, 58);
+    transition: .3s linear;
+    transform: scale(1.1,1.1);
+}
+
+.leftblock .active{
+    text-decoration: underline;
+}
+
+.leftblock img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+
+.leftblock img:hover + h2 {
+    color: rgb(223, 143, 58);
+    transition: .3s linear;
+    transform: scale(1.1, 1.1);
+}
+
+.centerblock{
+    position: relative;
+    top: -170px;
+    left: 300px;
+    width:75%;
+    background-color: rgb(0, 0, 143);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.centerblock .cards{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.centerblock .card{
+    width: 270px;
+    height: 300px;
+    margin: 15px;
+    background-color: rgb(213, 218, 255);
+    border-radius: 2%;
+}
+
+.centerblock .pages{
+    position: relative;
+    display: flex;
+    left: 300px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.centerblock .pages ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.centerblock .pages ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.centerblock .pages ul li{
+    margin: 5px;
+}
+
+.centerblock .pages ul li{
+    font-size: 20px;
+}
+
+.centerblock .pages ul li .active-page{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.catalog-line{
+    background-color: white;
+    width: 90%;
+    height: 3px;
+}
+
+.catalog-info{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    color: white;
+    margin-top: 30px;
+}
+
+.left-text{
+    margin-right: 30px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-text{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(67, 67, 67);
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.price span{
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+.price img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.05,1.05);
+    transition: .3s linear;
+    box-shadow: 5px 5px 5px blue;
+}
+
+.info img{
+    margin-top: 5px;
+    width: 210px;
+    height: 220px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+    .centerblock{
+        width: 65%;
+    }
+
+    .centerblock .pages{
+        left: 70px;
+    }
+
+    .catalog-info{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    }
+}
+
 @media screen and (max-width: 700px) {
     nav ul {
         flex-direction: column;
@@ -177,5 +383,18 @@ footer {
     }
     header .logo{
         width: 300px;
+    }
+    .centerblock{
+        width: 60%;
+        left: 170px;
+    }
+    .leftblock{
+        left: 5px;
+    }
+    .centerblock .pages{
+        left: 10px;
+    }
+    .left-text{
+        margin-right: 10px;
     }
 }
