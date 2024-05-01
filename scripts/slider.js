@@ -5,8 +5,6 @@ let dots = [document.getElementById('dot1'),document.getElementById('dot2'),docu
 let timerImage = setInterval(()=>currentSlide(index + 1), 4000);
 
 let currentSlide = function(n){
-  console.log("n = "+n);
-  console.log("inx = "+index);
   clearInterval(timerImage);
   if(n === -1){
     n = 3;
