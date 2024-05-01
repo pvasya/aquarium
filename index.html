@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aquarium</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
-    
+<header>
+    <div class="logo">
+        <a href="#"><img src="images/favicon.png" alt="Aquarium"></a>
+        <div class="title">
+            <h1>Aquarium</h1>
+            <span>найкраща компанія</span>
+        </div>
+    </div>
+    <div class="phone">
+           <Span>+380 (33) 333-33-33</Span>
+           <Span>+380 (99) 999-99-99</Span>
+           <p onclick="showForm()">Зворотний зв'язок</p>
+    </div>
+</header>
+
+<nav class="menu">
+    <ul>
+        <li><a href="#">Головна</a></li>
+        <li><div class="line"></div></li>
+        <li><a href="#">Каталог</a></li>
+        <li><div class="line"></div></li>
+        <li><a href="#">Доставка</a></li>
+        <li><div class="line"></div></li>
+        <li><a href="#">Ціни</a></li>
+        <li><div class="line"></div></li>
+        <li><a href="#">Контакти</a></li>
+    </ul>
+</nav>
+<div id="slider"></div>
+<div class="content"></div>
+<footer></footer>
+<div id="feedback">
+    <div class="form">
+        <div id="close" onclick="closeForm()"></div>
+        <div class="form-info">
+            <h1>Зворотний зв'язок</h1>
+
+            <form>
+                <label for="name">Ваше ім'я * </label>
+                <input type="text" name="name" placeholder="Поле є обов'язковим для заповнення" required>
+                <label for="name">Телефон * </label>
+                <input type="text" name="phone" placeholder="Поле є обов'язковим для заповнення" required>
+                <label for="name">Email * </label>
+                <input type="email" name="email" placeholder="Поле є обов'язковим для заповнення" required>
+                <label for="name">Повідомлення </label>
+                <textarea name="message"></textarea>
+                <input type="submit" value="Надіслати">
+            </form>
+    </div>
+    </div>
+</div>
+<script src="scripts/slider.js"></script>
+<script src="scripts/form.js"></script>
 </body>
 </html>
