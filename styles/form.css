@@ -2,7 +2,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0px;
+    top: 0;
     background-color: rgba(6, 143, 206, 0.5);
     display: flex;
     justify-content: center;
@@ -13,6 +13,8 @@
 
 #feedback .form{
     width: 500px;
+    position: absolute;
+    top: 100px;
     height: 550px;
     border-radius: 2%;
     background-color: rgb(213, 218, 255);
@@ -114,5 +116,8 @@
     #feedback .form #close{
         left: 90%;
         top: 10px;
+    }
+    #feedback .form{
+        width: 400px;
     }
 }

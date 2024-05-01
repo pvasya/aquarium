@@ -1,5 +1,6 @@
 function showForm() {
     var feedback = document.getElementById('feedback');
+    feedback.style.height = document.body.scrollHeight + 'px';
     feedback.style.display = 'flex';
     feedback.classList.add('fade-in');
 }

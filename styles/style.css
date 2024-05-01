@@ -1,6 +1,6 @@
 @font-face {
     font-family: "PTSans";
-    src: url(/fonts/PTSans/PTSans-Regular.ttf);
+    src: url(fonts/PTSans/PTSans-Regular.ttf);
 }
 
 :root {
@@ -116,6 +116,53 @@ header .phone p:hover{
     transition: .3s linear;
     transform: scale(1.1,1.1);
     text-decoration: none;
+}
+
+footer {
+    position: relative;
+    top: 380px;
+    background-color: rgb(33, 33, 110);
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-about {
+    width: 25%;
+    height: 50%;
+}
+
+.footer-about span{
+    color: white;
+    font-size: 12px;
+}
+
+.footer-menu {
+    width: 30%;
+    height: 50%;
+}
+.footer-menu ul{
+    list-style: none;
+}
+
+.footer-menu ul li a{
+    color: white;
+    font-size: 12px;
+}
+
+.footer-info {
+    width: 35%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.footer-info img{
+    width: 70px;
+    height: 70px;
 }
 
 @media screen and (max-width: 700px) {
