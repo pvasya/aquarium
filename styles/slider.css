@@ -1,40 +1,106 @@
-.slider {
-  position: relative;
-  height: 500px;
-  overflow: hidden;
-}
-
-.slide {
+.slider img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
   position: absolute;
-  top: 0;
-  left: 100%;
-  width: 980px;
-  height: 500px;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
 }
 
-.slide.active {
-  opacity: 1;
-  left: 0;
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 180px;
+  width: 100%;
+  height: 100%;
+}
+.controls .prev, .next {
+    width: 35px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 8px;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+
+.controls .prev:hover, .next:hover {
+  background-color: rgb(223, 61, 17);
 }
 
 .dots {
-  text-align: center;
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 350px;
+  width: 100%;
+  height: 100%;
 }
 
-.dot {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
+#dot1, #dot2, #dot3, #dot4 {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  background-color: #bbb;
   border-radius: 50%;
-  background-color: #333;
-  margin: 0 6px;
-  transition: background-color 0.3s ease;
+  z-index: 100;
 }
 
-.dot.active {
-  background-color: #fff;
+#img1{
+  z-index: 10;
 }
+
+#dot1{
+  background-color: rgb(223, 143, 58);
+}
+
+#dot1:hover, #dot2:hover, #dot3:hover, #dot4:hover {
+  background-color: #ff0000;
+}
+
+.controls img{
+  height: 50px;
+  width: 50px;
+}
+
+.current {
+  z-index: 10;
+}
+
+.next {
+  z-index: 100;
+}
+
+.prev {
+  z-index: 100;
+}
+
+
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
   }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}

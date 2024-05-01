@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/slider.css">
 </head>
 <body>
 <header>
@@ -37,7 +38,42 @@
         <li><a href="#">Контакти</a></li>
     </ul>
 </nav>
-<div id="slider"></div>
+
+<div class="slider">
+    <div class="slides">
+        <div class="slide">
+            <img src="images/sl1.jpg" alt="sl1" id="img1">
+        </div>
+        <div class="slide">
+            <img src="images/sl2.jpg" alt="sl2"  id="img2">
+        </div>
+        <div class="slide">
+            <img src="images/sl3.jpg" alt="sl3"  id="img3">
+        </div>
+        <div class="slide">
+            <img src="images/sl4.jpg" alt="sl4"  id="img4">
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="prev" onclick="prevSlide()">
+            <img src="images/prev.svg" alt="prev">
+        </div>
+        <div class="next" onclick="nextSlide()">
+            <img src="images/next.svg" alt="next">
+        </div>
+    </div>
+
+    <div class="dots">
+        <div class="dot" id="dot1" onclick="currentSlide(0)"></div>
+        <div class="dot" id="dot2" onclick="currentSlide(1)"></div>
+        <div class="dot" id="dot3" onclick="currentSlide(2)"></div>
+        <div class="dot" id="dot4" onclick="currentSlide(3)"></div>
+    </div>
+
+    <script src="scripts/slider.js"></script>
+</div>
+
 <div class="content"></div>
 <footer></footer>
 <div id="feedback">
@@ -60,7 +96,6 @@
     </div>
     </div>
 </div>
-<script src="scripts/slider.js"></script>
 <script src="scripts/form.js"></script>
 </body>
 </html>
