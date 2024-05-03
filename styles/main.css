@@ -1,0 +1,55 @@
+.main-info {
+    position: relative;
+    width: 100%;
+    top: 380px;
+    color: gray;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(91, 91, 255);
+}
+
+.company {
+    width: 70%;
+    background-color: rgb(250, 248, 255);
+}
+
+.company h1 {
+    text-align: center;
+}
+
+.company p{
+    padding: 10px;
+}
+
+.company .text-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.company .text{
+    max-width: 50%;
+}
+
+.company .img{
+    width: 100%;
+    margin-right: 5px;
+    margin-top: 28px;
+}
+
+.img img{
+    width: 100%;
+}
+
+.map{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    position: relative;
+    top: 380px;
+}

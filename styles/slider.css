@@ -78,22 +78,8 @@
   z-index: 100;
 }
 
-
-.fade-in {
-  animation: fadeIn 0.5s forwards;
-}
-
 .fade-out {
-  animation: fadeOut 0.5s forwards;
-}
-
-@keyframes fadeIn {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
+  animation: fadeOut 1s forwards;
 }
 
 @keyframes fadeOut {

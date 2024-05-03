@@ -3,9 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aquarium - Головна</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    
+<header>
+    <div class="logo">
+        <a href="#"><img src="images/favicon.png" alt="Aquarium"></a>
+        <div class="title">
+            <h1>Aquarium</h1>
+            <span>найкраща компанія</span>
+        </div>
+    </div>
+    <div class="phone">
+           <Span>+380 (33) 333-33-33</Span>
+           <Span>+380 (99) 999-99-99</Span>
+           <p onclick="showForm()">Зворотний зв'язок</p>
+    </div>
+</header>
+
+<nav class="menu">
+    <ul>
+        <li><a href="main.html">Головна</a></li>
+        <li><div class="line"></div></li>
+        <li><a href="index.html">Каталог</a></li>
+        <li><div class="line"></div></li>
+        <li><a href="#">Доставка</a></li>
+        <li><div class="line"></div></li>
+        <li><a href="#">Ціни</a></li>
+        <li><div class="line"></div></li>
+        <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+</nav>
+
+<div class="slider">
+    <div class="slides">
+        <div class="slide">
+            <img src="images/sl1.jpg" alt="sl1" id="img1">
+        </div>
+        <div class="slide">
+            <img src="images/sl2.jpg" alt="sl2"  id="img2">
+        </div>
+        <div class="slide">
+            <img src="images/sl3.jpg" alt="sl3"  id="img3">
+        </div>
+        <div class="slide">
+            <img src="images/sl4.jpg" alt="sl4"  id="img4">
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="prev" onclick="prevSlide()">
+            <img src="images/prev.svg" alt="prev">
+        </div>
+        <div class="next" onclick="nextSlide()">
+            <img src="images/next.svg" alt="next">
+        </div>
+    </div>
+
+    <div class="dots">
+        <div class="dot" id="dot1" onclick="currentSlide(0)"></div>
+        <div class="dot" id="dot2" onclick="currentSlide(1)"></div>
+        <div class="dot" id="dot3" onclick="currentSlide(2)"></div>
+        <div class="dot" id="dot4" onclick="currentSlide(3)"></div>
+    </div>
+</div>
+
+<div class="main-info">
+    <div class="company">
+        <h1>Aquarium</h1>
+        <div class="text-img">
+            <div class="text">
+                <p>Aquarium - це інтернет-магазин, який спеціалізується на продажу акваріумних рибок та аксесуарів для акваріумів. Завдяки широкому асортименту та великому досвіду у галузі акваріумістики, компанія Aquarium стала популярним вибором серед любителів рибництва та власників акваріумів.</p>
+                <p>У магазині Aquarium представлено багато різноманітних видів акваріумних рибок з різних куточків світу. Від популярних видів, які відомі своєю красою і легкістю догляду, до екзотичних і рідкісних рибок, які додадуть унікальність та інтерес до будь-якого акваріуму. Крім рибок, Aquarium також пропонує широкий вибір аксесуарів, таких як фільтри, підсвітка, декор, що допомагає створити ідеальне середовище для життя рибок.</p>
+                <p>Однією з ключових переваг магазину Aquarium є зручна інтернет-платформа, яка дозволяє клієнтам легко здійснювати покупки онлайн, переглядати асортимент, здійснювати оплату та отримувати замовлення безпосередньо до дому. Крім того, професійна консультація та підтримка клієнтів дозволяють кожному швидко отримати відповіді на всі питання щодо догляду за рибами та управління акваріумом.</p>
+            </div>
+            <div class="img">
+                <img src="images/shop.jpg" alt="shop">
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-about">
+        <span>© 2024 Aquarium</span><br>
+        <span>hraq300011@gmail.com</span>
+    </div>
+    <div class="footer-menu">    
+        <ul>
+        <li><a href="main.html">Головна</a></li>
+        <li><a href="index.html">Каталог</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Ціни</a></li>
+        <li><a href="contacts.html">Контакти</a>
+        </li>
+    </ul>
+</div>
+    <div class="footer-info"><img src="images/img.png" alt="Programmer"><span>Розробка сайту -<br> Попович Василь Вікторович</span></div>
+</footer>
+<div id="feedback">
+    <div class="form">
+        <div id="close" onclick="closeForm()"></div>
+        <div class="form-info">
+            <h1>Зворотний зв'язок</h1>
+
+            <form>
+                <label for="name">Ваше ім'я * </label>
+                <input type="text" name="name" placeholder="Поле є обов'язковим для заповнення" required>
+                <label for="name">Телефон * </label>
+                <input type="text" name="phone" placeholder="Поле є обов'язковим для заповнення" required>
+                <label for="name">Email * </label>
+                <input type="email" name="email" placeholder="Поле є обов'язковим для заповнення" required>
+                <label for="name">Повідомлення </label>
+                <textarea name="message"></textarea>
+                <input type="submit" value="Надіслати">
+            </form>
+    </div>
+    </div>
+</div>
+<script src="scripts/slider.js"></script>
+<script src="scripts/form.js"></script>
 </body>
 </html>

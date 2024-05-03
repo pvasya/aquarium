@@ -22,14 +22,12 @@ let currentSlide = function(n){
         }
         img[i].style.opacity = 1;
         img[i].classList.remove('fade-out');
-        img[i].classList.remove('fade-in');
       }
 
       img[index].style.zIndex = 10;
       img[n].style.zIndex = 9;
 
       img[index].classList.add('fade-out');
-      img[n].classList.add('fade-in');
 
       index = n;
     }

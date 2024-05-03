@@ -3,9 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aquarium - Контакти</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/contacts.css">
 </head>
 <body>
-    
+<header>
+    <div class="logo">
+        <a href="#"><img src="images/favicon.png" alt="Aquarium"></a>
+        <div class="title">
+            <h1>Aquarium</h1>
+            <span>найкраща компанія</span>
+        </div>
+    </div>
+    <div class="phone">
+           <Span>+380 (33) 333-33-33</Span>
+           <Span>+380 (99) 999-99-99</Span>
+           <p onclick="showForm()">Зворотний зв'язок</p>
+    </div>
+</header>
+
+<nav class="menu">
+    <ul>
+        <li><a href="main.html">Головна</a></li>
+        <li><div class="line"></div></li>
+        <li><a href="index.html">Каталог</a></li>
+        <li><div class="line"></div></li>
+        <li><a href="#">Доставка</a></li>
+        <li><div class="line"></div></li>
+        <li><a href="#">Ціни</a></li>
+        <li><div class="line"></div></li>
+        <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+</nav>
+
+<div class="slider">
+    <div class="slides">
+        <div class="slide">
+            <img src="images/sl1.jpg" alt="sl1" id="img1">
+        </div>
+        <div class="slide">
+            <img src="images/sl2.jpg" alt="sl2"  id="img2">
+        </div>
+        <div class="slide">
+            <img src="images/sl3.jpg" alt="sl3"  id="img3">
+        </div>
+        <div class="slide">
+            <img src="images/sl4.jpg" alt="sl4"  id="img4">
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="prev" onclick="prevSlide()">
+            <img src="images/prev.svg" alt="prev">
+        </div>
+        <div class="next" onclick="nextSlide()">
+            <img src="images/next.svg" alt="next">
+        </div>
+    </div>
+
+    <div class="dots">
+        <div class="dot" id="dot1" onclick="currentSlide(0)"></div>
+        <div class="dot" id="dot2" onclick="currentSlide(1)"></div>
+        <div class="dot" id="dot3" onclick="currentSlide(2)"></div>
+        <div class="dot" id="dot4" onclick="currentSlide(3)"></div>
+    </div>
+</div>
+
+<div class="main-info">
+    <div class="company">
+        <h1>Контакти</h1>
+        <div class="text-img">
+            <div class="text">
+                <h2>Телефон</h2>
+                <span>+380 (33) 333-33-33</span><br>
+                <span>+380 (99) 999-99-99</span>
+                <h2>Email</h2>
+                <span>hraq300011@gmail.com</span>
+            </div>
+            <div class="img">
+                <img src="images/shop.jpg" alt="shop">
+            </div>
+        </div>
+        <h2 id="goolgemaps">Google maps</h2>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.894887847214!2d-84.3976847242959!3d33.76338197326704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5047e45f40419%3A0xfed77076a9af4adc!2sGeorgia%20Aquarium!5e0!3m2!1suk!2sua!4v1714720515790!5m2!1suk!2sua" width="98%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-about">
+        <span>© 2024 Aquarium</span><br>
+        <span>hraq300011@gmail.com</span>
+    </div>
+    <div class="footer-menu">    
+        <ul>
+        <li><a href="main.html">Головна</a></li>
+        <li><a href="index.html">Каталог</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Ціни</a></li>
+        <li><a href="contacts.html">Контакти</a>
+        </li>
+    </ul>
+</div>
+    <div class="footer-info"><img src="images/img.png" alt="Programmer"><span>Розробка сайту -<br> Попович Василь Вікторович</span></div>
+</footer>
+<div id="feedback">
+    <div class="form">
+        <div id="close" onclick="closeForm()"></div>
+        <div class="form-info">
+            <h1>Зворотний зв'язок</h1>
+
+            <form>
+                <label for="name">Ваше ім'я * </label>
+                <input type="text" name="name" placeholder="Поле є обов'язковим для заповнення" required>
+                <label for="name">Телефон * </label>
+                <input type="text" name="phone" placeholder="Поле є обов'язковим для заповнення" required>
+                <label for="name">Email * </label>
+                <input type="email" name="email" placeholder="Поле є обов'язковим для заповнення" required>
+                <label for="name">Повідомлення </label>
+                <textarea name="message"></textarea>
+                <input type="submit" value="Надіслати">
+            </form>
+    </div>
+    </div>
+</div>
+<script src="scripts/slider.js"></script>
+<script src="scripts/form.js"></script>
 </body>
 </html>
