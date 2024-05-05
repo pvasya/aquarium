@@ -53,7 +53,7 @@
 }
 
 iframe{
-    margin: 10px;
+    margin: 0;
 }
 
 #goolgemaps{
@@ -63,4 +63,10 @@ iframe{
 footer {
     position: relative;
     top: 380px;
+}
+
+@media screen and (max-width: 700px) {
+    .company{
+        width: 100%;
+    }
 }

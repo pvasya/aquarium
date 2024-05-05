@@ -53,3 +53,15 @@ footer {
     position: relative;
     top: 380px;
 }
+
+@media screen and (max-width: 700px) {
+    .company{
+        width: 100%;
+    }
+    .company .text{
+        max-width: 100%;
+    }
+    .company .text-img{
+        flex-direction: column-reverse;
+    }
+}
