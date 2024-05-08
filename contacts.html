@@ -123,9 +123,9 @@
                 <label>Ваше ім'я * </label>
                 <input type="text" name="name" placeholder="Поле є обов'язковим для заповнення" required>
                 <label>Телефон * </label>
-                <input type="text" name="phone" placeholder="Поле є обов'язковим для заповнення" required>
+                <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Поле є обов'язковим для заповнення" required>
                 <label>Email * </label>
-                <input type="email" name="email" placeholder="Поле є обов'язковим для заповнення" required>
+                <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Поле є обов'язковим для заповнення" required>
                 <label>Повідомлення </label>
                 <textarea name="message"></textarea>
                 <input type="submit" value="Надіслати">
