@@ -321,6 +321,8 @@ footer {
     margin-top: 5px;
     margin-bottom: 5px;
     color: rgb(67, 67, 67);
+    text-align: left;
+    width: 90%;
 }
 
 .price{
